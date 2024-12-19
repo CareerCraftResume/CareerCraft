@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Resume Builder Interface</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            width: 1200px;
+            height: 800px;
+            background: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        .resume-container {
+            display: flex;
+            gap: 40px;
+            height: 100%;
+        }
+        .sidebar {
+            width: 300px;
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 24px;
+        }
+        .main-content {
+            flex: 1;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .section {
+            margin-bottom: 24px;
+            padding: 16px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .section-title {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .input {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .ai-suggestion {
+            background: #f1f5f9;
+            border-left: 3px solid #6366f1;
+            padding: 12px;
+            margin-top: 16px;
+            border-radius: 0 8px 8px 0;
+            font-size: 13px;
+            color: #475569;
+        }
+        .resume-header {
+            margin-bottom: 32px;
+        }
+        .resume-name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+        .resume-contact {
+            font-size: 14px;
+            color: #64748b;
+        }
+        .experience-item {
+            margin-bottom: 24px;
+        }
+        .job-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #1e293b;
+            margin-bottom: 4px;
+        }
+        .company-name {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+        .date-range {
+            font-size: 12px;
+            color: #94a3b8;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .skill-tag {
+            background: #f1f5f9;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 12px;
+            color: #475569;
+        }
+        .ai-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            vertical-align: middle;
+            color: #6366f1;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="resume-container">
+        <div class="sidebar">
+            <div class="section">
+                <div class="section-title">Personal Information</div>
+                <input type="text" class="input" placeholder="Full Name" value="John Developer">
+                <input type="text" class="input" placeholder="Email" value="john@example.com">
+                <input type="text" class="input" placeholder="Phone" value="(555) 123-4567">
+                <div class="ai-suggestion">
+                    <svg class="ai-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                    </svg>
+                    AI Suggestion: Add LinkedIn profile to enhance professional presence
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Experience</div>
+                <input type="text" class="input" placeholder="Job Title">
+                <input type="text" class="input" placeholder="Company">
+                <input type="text" class="input" placeholder="Date Range">
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="resume-header">
+                <div class="resume-name">John Developer</div>
+                <div class="resume-contact">
+                    john@example.com • (555) 123-4567 • San Francisco, CA
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="job-title">Senior Software Engineer</div>
+                <div class="company-name">Tech Solutions Inc.</div>
+                <div class="date-range">Jan 2020 - Present</div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">React</div>
+                <div class="skill-tag">Node.js</div>
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">AWS</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
